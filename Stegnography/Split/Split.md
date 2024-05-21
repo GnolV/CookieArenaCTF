@@ -10,13 +10,13 @@
 4. [Steganography online](https://stylesuxx.github.io/steganography/)
 
 ### Bắt đầu
-Đầu tiên, mình sử dụng exiftool để xem thông tin ảnh
+Đầu tiên, mình sử dụng exiftool để xem thông tin ảnh.
 
 ![Screenshot](https://github.com/GnolV/CookieCTF/blob/cba8eefecded05ea62339876d1fdc297db3cbe49/Stegnography/Split/exiftool.png)
 
-Không có gì đặc biệt cả
+Không có gì đặc biệt cả.
 
-Đến lượt Binwalk xem sao
+Đến lượt Binwalk xem sao.
 
 ![Screenshot](https://github.com/GnolV/CookieCTF/blob/cba8eefecded05ea62339876d1fdc297db3cbe49/Stegnography/Split/binwalk.png)
 
@@ -24,13 +24,13 @@ Bên trong có 1 file nén RAR. Trích xuất nó ra ta được 1 file tên 296
 
 ![Screenshot](https://github.com/GnolV/CookieCTF/blob/cba8eefecded05ea62339876d1fdc297db3cbe49/Stegnography/Split/Hex_canva.png)
 
-Header của file bị sai, phải là Rar! mới đúng. Sửa lại rồi tải về và đổi tên thành canva.rar. Sau khi giải nén, ta được 3 file canvas.png.001, canvas.png.002, canvas.png.003
+Header của file bị sai, phải là Rar! mới đúng. Sửa lại rồi tải về và đổi tên thành canva.rar. Sau khi giải nén, ta được 3 file canvas.png.001, canvas.png.002, canvas.png.003.
 
 Trong đó, canvas.png.001 là 1 file ảnh png nhưng chỉ có 1 phần. 2 file còn lại trông giống dữ liệu ảnh nhưng không có header.
 
 Loay hoay một lúc thì mình nhớ ra bài này tên là "Split" tức là 3 file này là của 1 ảnh bị tách ra. Vậy thì tiến hành nối chúng lại với nhau thôi.
 
-Mình sử dụng python với module base64 để chuyển ảnh về chuỗi cho dễ nối lại.
+Mình sử dụng python với module base64 để chuyển ảnh về chuỗi cho dễ nối lại:
 
 ```python3
 import base64
@@ -43,7 +43,7 @@ fo = open("image.txt", "wb")
 fo.write(img_base64)
 ```
 
-Sau khi nối lại xong thì ta chuyển định dạng từ base64 thành ảnh
+Sau khi nối lại xong thì ta chuyển định dạng từ base64 thành ảnh:
 
 ```python3
 import base64
