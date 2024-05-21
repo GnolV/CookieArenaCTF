@@ -1,7 +1,7 @@
 # Writeup
 
 ## Split
-[Link](https://battle.cookiearena.org/challenges/stenography/split)
+[Link](https://battle.cookiearena.org/challenges/stenography/split) bài lab.
 
 ### Công cụ sử dụng
 1. Exiftool, Binwalk, Zsteg, Python3
