@@ -8,10 +8,9 @@ Writeup được viết dựa trên writeup của n9tr4o trên forum Cookie Aren
 Format FLAG: ECH{XXXX}
 
 ### Công cụ
-1. Exiftool, Python3,
+1. Exiftool, Python3
 2. [CyberChef](https://gchq.github.io/CyberChef)
 3. [Aperi'Solve](https://www.aperisolve.com/)
-4. [tomeko.net](https://tomeko.net/index.php?lang=en)
 
 ### Bắt đầu
 Trước tiên, ta tải ảnh lên Aperi'Solve để phân tích ảnh.
