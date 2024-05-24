@@ -18,6 +18,6 @@ Mở ảnh bằng Audacity hoặc Sonic Visualiser rồi thêm layer Spectrogram
 
 Submit thôi!!!
 
-![img](https://github.com/GnolV/CookieCTF/blob/02a6c1c488edf13ad97e2b989e99d5b4dc4275c5/Stegnography/Can%20you%20see%20me/completed.png)
+![img](https://github.com/GnolV/CookieArenaCTF/blob/12d82f6f9b6c45d6314d4ad443ffab2fd6c758c7/Stegnography/Here%20With%20You%20Eyes/completed.png)
 
 PS: nhớ để ý format flag để không bị sai.
