@@ -3,7 +3,7 @@
 ## Disco
 [Link](https://battle.cookiearena.org/challenges/stenography/0x0) bài lab.
 
-Format FLAG: CHH{XXXX}
+FLAG format: CHH{XXXX}
 
 ### Công cụ
 1. [CyberChef](https://gchq.github.io/CyberChef/)
@@ -20,3 +20,5 @@ Sau khi ngồi chuyển đoạn mã đó về dạng 0 1, mình thấy có gì �
 Giải mã xong để lấy được flag rồi submit thôi! 
 
 ![completed](https://github.com/GnolV/CookieArenaCTF/blob/14e9535b8fd1007651d04a5aa3396045235a671b/Stegnography/Disco/completed.png)
+
+PS: Nhớ để ý FLAG format của bài khi submit đấy.
