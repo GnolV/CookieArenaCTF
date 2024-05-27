@@ -56,11 +56,7 @@ fo = open("combined_image.png", "wb")
 fo.write(img_data)
 ```
 
-Sau khi nối xong ta sẽ được ảnh sau
-
-![Screenshot](https://github.com/GnolV/CookieCTF/blob/cba8eefecded05ea62339876d1fdc297db3cbe49/Stegnography/Split/combined_image.png)
-
-Sau khi sử dụng Exiftool và Binwalk, mình xác định bên trong ảnh không còn chứa file nào. Bây giờ mình vào trang [Steganography online](https://stylesuxx.github.io/steganography/) để tìm kiếm dữ liệu ẩn trong ảnh.
+Nối xong ta sẽ được ảnh hoàn chỉnh. Sau khi sử dụng Exiftool và Binwalk, mình xác định bên trong ảnh không còn chứa file nào. Bây giờ mình vào trang [Steganography online](https://stylesuxx.github.io/steganography/) để tìm kiếm dữ liệu ẩn trong ảnh.
 
 ![Screenshot](https://github.com/GnolV/CookieCTF/blob/cba8eefecded05ea62339876d1fdc297db3cbe49/Stegnography/Split/stegno_online.png)
 
