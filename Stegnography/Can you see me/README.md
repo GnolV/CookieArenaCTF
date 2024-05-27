@@ -5,7 +5,7 @@
 
 Writeup được viết dựa trên writeup của n9tr4o trên forum Cookie Arena [link](https://forum.cookiearena.org/t/stenography-can-you-see-me/61).
 
-Format FLAG: ECH{XXXX}
+FLAG format: ECH{XXXX}
 
 ### Công cụ
 1. Exiftool, Python3
@@ -93,4 +93,4 @@ Submit thôi!!!
 
 ![img](https://github.com/GnolV/CookieCTF/blob/02a6c1c488edf13ad97e2b989e99d5b4dc4275c5/Stegnography/Can%20you%20see%20me/completed.png)
 
-PS: nhớ để ý format flag để không bị sai.
+PS: nhớ để ý flag format để không bị sai.
