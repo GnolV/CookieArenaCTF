@@ -37,11 +37,7 @@ Rồi mình lại đưa lên CyberChef để chuyển về ảnh png. Ảnh tả
 
 ![img](https://github.com/GnolV/CookieArenaCTF/blob/a3595975803a9e90693c4562938f7f1b1e091d6a/Stegnography/0x0/pngcheck2.png)
 
-Sau một hồi lần mò mình tìm thấy công cụ "PNG dimensions bruteforcer" trên github cho phép ta sửa lại thông tin kích thước ảnh. Sau khi sửa xong ta được ảnh:
-
-![img](https://github.com/GnolV/CookieArenaCTF/blob/a3595975803a9e90693c4562938f7f1b1e091d6a/Stegnography/0x0/fixed.png)
-
-Dùng Exiftool, Binwalk, Zsteg không thấy có gì lạ cả nên mình đã đưa ảnh lên Aperi'Solve để phân tích. Mình phát hiện trong số các filter màu có 1 filter cho ra 1 ảnh có chứa mã QR. 
+Sau một hồi lần mò mình tìm thấy công cụ "PNG dimensions bruteforcer" trên github cho phép ta sửa lại thông tin kích thước ảnh. Sửa ảnh xong mình dùng Exiftool, Binwalk, Zsteg nhưng không thấy có gì lạ cả nên mình đã đưa ảnh lên Aperi'Solve để phân tích. Tại đây, mình phát hiện trong số các filter màu có 1 filter cho ra 1 ảnh có chứa mã QR. 
 
 Tải ảnh đó về rồi cắt lấy phần mã QR ra. Tuy nhiên mã QR này bị ngược màu nên mình không quét được. Mình viết code python để chuyển màu ảnh đen sang trắng và trắng sang đen:
 
