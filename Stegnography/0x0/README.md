@@ -3,7 +3,7 @@
 ## 0x0
 [Link](https://battle.cookiearena.org/challenges/stenography/0x0) bài lab.
 
-Format FLAG: CHH{XXXX}
+FLAG format: CHH{XXXX}
 
 ### Công cụ
 1. Exiftool, Python3, Pngcheck, GHex
