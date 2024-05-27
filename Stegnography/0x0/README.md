@@ -15,11 +15,11 @@ Format FLAG: CHH{XXXX}
 
 Đầu tiên, mình sử dụng Exiftool để xem thông tin ảnh. Không có gì bất thường cả. Tiếp theo, mình sử dụng Pngcheck thì thấy xuất hiện thông báo sau chunk IEND vẫn còn dữ liệu.
 
-[img](https://github.com/GnolV/CookieArenaCTF/blob/a3595975803a9e90693c4562938f7f1b1e091d6a/Stegnography/0x0/pngcheck.png)
+![img](https://github.com/GnolV/CookieArenaCTF/blob/a3595975803a9e90693c4562938f7f1b1e091d6a/Stegnography/0x0/pngcheck.png)
 
 Sử dụng GHex để xem dữ liệu đó là gì.
 
-[img](https://github.com/GnolV/CookieArenaCTF/blob/a3595975803a9e90693c4562938f7f1b1e091d6a/Stegnography/0x0/ghex1.png)
+![img](https://github.com/GnolV/CookieArenaCTF/blob/a3595975803a9e90693c4562938f7f1b1e091d6a/Stegnography/0x0/ghex1.png)
 
 Đó là dữ liệu của 1 file ảnh png khác. Trích xuất dữ liệu đó để lấy fiel ảnh thứ 2. Ở đây, mình đưa ảnh lên CyberChef, chuyển về định dạng hexdump rồi tải file đó về. Mình mở file đó lên và thấy dữ liệu file ảnh thứ 2 bắt đầu từ dòng 38644 nên mình viết code python để lấy dữ liệu. Các bạn có thể tham khảo:
 
@@ -35,11 +35,11 @@ with open("hidden.txt", "w") as hidden:
 
 Rồi mình lại đưa lên CyberChef để chuyển về ảnh png. Ảnh tải về không xem được nên mình sử dụng Pngcheck để kiểm tra thì thấy xuất hiện thông báo kích thước ảnh bị sai "chunk IHDR at offset 0x0000c, length 13: invalid image dimensions (0x0)".
 
-[img](https://github.com/GnolV/CookieArenaCTF/blob/a3595975803a9e90693c4562938f7f1b1e091d6a/Stegnography/0x0/pngcheck2.png)
+![img](https://github.com/GnolV/CookieArenaCTF/blob/a3595975803a9e90693c4562938f7f1b1e091d6a/Stegnography/0x0/pngcheck2.png)
 
 Sau một hồi lần mò mình tìm thấy công cụ "PNG dimensions bruteforcer" trên github cho phép ta sửa lại thông tin kích thước ảnh. Sau khi sửa xong ta được ảnh:
 
-[img](https://github.com/GnolV/CookieArenaCTF/blob/a3595975803a9e90693c4562938f7f1b1e091d6a/Stegnography/0x0/fixed.png)
+![img](https://github.com/GnolV/CookieArenaCTF/blob/a3595975803a9e90693c4562938f7f1b1e091d6a/Stegnography/0x0/fixed.png)
 
 Dùng Exiftool, Binwalk, Zsteg không thấy có gì lạ cả nên mình đã đưa ảnh lên Aperi'Solve để phân tích. Mình phát hiện trong số các filter màu có 1 filter cho ra 1 ảnh có chứa mã QR. 
 
@@ -63,4 +63,4 @@ img.save("image_qr.png", format="png")
 
 Mở ảnh đã sửa lên, quét mã QR, lấy flag rồi submit thôi.
 
-[img](https://github.com/GnolV/CookieArenaCTF/blob/a3595975803a9e90693c4562938f7f1b1e091d6a/Stegnography/0x0/completed.png)
+![img](https://github.com/GnolV/CookieArenaCTF/blob/a3595975803a9e90693c4562938f7f1b1e091d6a/Stegnography/0x0/completed.png)
