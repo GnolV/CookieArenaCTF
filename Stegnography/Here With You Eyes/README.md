@@ -3,7 +3,7 @@
 ## Here with your eyes
 [Link](https://battle.cookiearena.org/challenges/stenography/here-with-your-eyes) bài lab.
 
-Format FLAG: CHH{XXXX}
+FLAG format: CHH{XXXX}
 
 ### Công cụ
 1. Exiftool, Python3,
@@ -20,4 +20,4 @@ Submit thôi!!!
 
 ![img](https://github.com/GnolV/CookieArenaCTF/blob/12d82f6f9b6c45d6314d4ad443ffab2fd6c758c7/Stegnography/Here%20With%20You%20Eyes/completed.png)
 
-PS: nhớ để ý format flag để không bị sai.
+PS: nhớ để ý flag format để không bị sai.
